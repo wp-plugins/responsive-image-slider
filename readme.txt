@@ -26,7 +26,7 @@ Or you can paste following to add slider to your theme:
 
 It's just a BETA release of the plugin, and bunch of new features, including an option panel, is coming soon.
 
-=Features=
+<h1>Features</h1>
 
 1. Full Width + Responsive
 2. Unlimited Slides
