@@ -26,6 +26,13 @@ Or you can paste following to add slider to your theme:
 
 It's just a BETA release of the plugin, and bunch of new features, including an option panel, is coming soon.
 
+=Features=
+
+1. Full Width + Responsive
+2. Unlimited Slides
+3. Keyboard Support
+4. Lots more!
+
 == Installation ==
 
 1. Upload the plugin to your 'wp-content/plugins' directory, or download and install automatically through your admin panel.
@@ -36,3 +43,11 @@ It's just a BETA release of the plugin, and bunch of new features, including an 
 = How to donate or contribute? =
 
 I'm a teen WordPresser, so I don't have a Paypal account, so just simply support this plugin by visiting our website <a href="http://www.trickspanda.com">Tricks Panda</a>.
+
+= Which slider are you using for the plugin? =
+
+I'm using the amazing <a target="_blank" href="http://unslider.com/">Unslider</a> for this plugin.
+
+== Screenshots ==
+
+1. Slider On Front-End
