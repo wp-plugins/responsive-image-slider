@@ -18,7 +18,7 @@ It's an easy, simple & responsive slider, which looks awesome in every single th
 
 Just create your slides from the Slider menu & paste the following shortcode where you want to display this theme:
 
-`tp-unslider`
+`[tp-unslider]`
 
 Or you can paste following to add slider to your theme:
 
