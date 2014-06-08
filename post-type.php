@@ -51,7 +51,8 @@ function my_edit_unslider_columns( $columns ) {
 	$columns = array(
 		'cb' => '<input type="checkbox" />',
 		'post_id' => __('Slide ID'),
-		'thumbnail' => __('Thumbnail')
+		'thumbnail' => __('Thumbnail'),
+		'post_edit' => __('Edit')
 	);
 
 	return $columns;
@@ -68,6 +69,11 @@ function my_custom_unslider_columns($column)
 	if($column == 'post_id')
 	{
 		echo get_the_ID();
+	}
+
+	if($column == 'post_edit')
+	{
+		echo '<a href="'.get_edit_post_link().'">Edit</a>';
 	}
 }
 

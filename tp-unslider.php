@@ -24,7 +24,6 @@ function tp_unslider_jquery()
 {
 ?>
 <script type="text/javascript">
-$(function() {
 $('.unslider').unslider({
 	speed: 500,               //  The speed to animate each slide (in milliseconds)
 	delay: 3000,              //  The delay between slide animations (in milliseconds)
@@ -32,7 +31,6 @@ $('.unslider').unslider({
 	keys: true,               //  Enable keyboard (left, right) arrow shortcuts
 	dots: true,               //  Display dot navigation
 	fluid: true              //  Support responsive design. May break non-responsive designs
-});
 });
 </script>
 <?php
