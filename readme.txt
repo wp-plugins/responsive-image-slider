@@ -56,8 +56,8 @@ I'm using the amazing <a target="_blank" href="http://unslider.com/">Unslider</a
 
 = 1.1 =
 * Fixed JavaScript conflicting issues.
+* Added option to edit existing slides, oops.
 
 = 1.2 =
 * Added option page.
 * Added shortcode support for text widgets.
-* Added option to edit existing slides.
