@@ -1,7 +1,7 @@
 === Responsive Image Slider ===
 Plugin URI: http://www.trickspanda.com
 Description: Responsive Image Slider is the most simple & amazing responsive image slider ever.
-Version: 1.1
+Version: 1.2
 Requires at least: 2.5
 Tested up to: 3.9
 Contributors: hardeepasrani
@@ -24,14 +24,13 @@ Or you can paste following to add slider to your theme:
 
 `<?php echo do_shortcode('[tp-unslider]'); ?>`
 
-It's just a BETA release of the plugin, and bunch of new features, including an option panel, is coming soon.
-
 <h1>Features</h1>
 
 1. Full Width + Responsive
 2. Unlimited Slides
 3. Keyboard Support
-4. Lots more!
+4. Easy to configure option page
+5. Lots more!
 
 == Installation ==
 
@@ -51,9 +50,14 @@ I'm using the amazing <a target="_blank" href="http://unslider.com/">Unslider</a
 == Screenshots ==
 
 1. Slider On Front-End
+2. Option Page
 
 == Changelog ==
 
 = 1.1 =
 * Fixed JavaScript conflicting issues.
+
+= 1.2 =
+* Added option page.
+* Added shortcode support for text widgets.
 * Added option to edit existing slides.
