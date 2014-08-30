@@ -4,7 +4,7 @@ Plugin Name: Responsive Image Slider
 Plugin URI: http://www.trickspanda.com
 Description: Responsive Image Slider is the most simple & amazing responsive image slider ever.
 Author: Hardeep Asrani
-Version: 1.2
+Version: 1.3
 Author URI: http://www.hardeepasrani.com
 */
 
@@ -74,4 +74,13 @@ add_filter('widget_text', 'do_shortcode');
 include( plugin_dir_path( __FILE__ ) . 'plugin-options.php');
 include( plugin_dir_path( __FILE__ ) . 'shortcode.php');
 include( plugin_dir_path( __FILE__ ) . 'post-type.php');
+
+function tp_action_init()
+{
+// Localization
+load_plugin_textdomain('tp_unslider', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
+}
+
+// Add actions
+add_action('init', 'tp_action_init');
 ?>

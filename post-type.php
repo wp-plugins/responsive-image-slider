@@ -19,7 +19,7 @@ function unslider() {
 		'not_found_in_trash'  => __( 'Not found in Trash', 'tp_unslider' ),
 	);
 	$args = array(
-		'label'               => __( 'unslider', 'tp_unslider' ),
+		'label'               => __( 'Unslider', 'tp_unslider' ),
 		'description'         => __( 'Image slides', 'tp_unslider' ),
 		'labels'              => $labels,
 		'supports'            => array( 'editor', 'thumbnail', ),
@@ -50,9 +50,9 @@ function my_edit_unslider_columns( $columns ) {
 
 	$columns = array(
 		'cb' => '<input type="checkbox" />',
-		'post_id' => __('Slide ID'),
-		'thumbnail' => __('Thumbnail'),
-		'post_edit' => __('Edit')
+		'post_id' => __('Slide ID', 'tp_unslider'),
+		'thumbnail' => __('Thumbnail', 'tp_unslider'),
+		'post_edit' => __('Edit', 'tp_unslider')
 	);
 
 	return $columns;
@@ -73,7 +73,7 @@ function my_custom_unslider_columns($column)
 
 	if($column == 'post_edit')
 	{
-		echo '<a href="'.get_edit_post_link().'">Edit</a>';
+		echo '<a href="'.get_edit_post_link().'">'. __('Edit', 'tp_unslider') .'</a>';
 	}
 }
 

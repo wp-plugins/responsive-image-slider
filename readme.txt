@@ -1,9 +1,9 @@
 === Responsive Image Slider ===
 Plugin URI: http://www.trickspanda.com
 Description: Responsive Image Slider is the most simple & amazing responsive image slider ever.
-Version: 1.2
+Version: 1.3
 Requires at least: 2.5
-Tested up to: 3.9
+Tested up to: 4.0
 Contributors: hardeepasrani
 Author URI: http://www.hardeepasrani.com
 Tags: responsive, image slider, slider, images, full width, slide, unslider
