@@ -4,7 +4,7 @@ Plugin Name: Responsive Image Slider
 Plugin URI: http://www.trickspanda.com
 Description: Responsive Image Slider is the most simple & amazing responsive image slider ever.
 Author: Hardeep Asrani
-Version: 1.3
+Version: 1.4
 Author URI: http://www.hardeepasrani.com
 */
 
@@ -29,7 +29,7 @@ $undots = get_option('unsoption_dots');
 $unfluid = get_option('unsoption_fluid');
 ?>
 <script type="text/javascript">
-$('.unslider').unslider({
+jQuery('.unslider').unslider({
 <?php
 if( !empty($unspeed) ) {
     echo '    speed: '.$unspeed.',               //  The speed to animate each slide (in milliseconds) '."\r\n";
