@@ -34,6 +34,7 @@ Or you can paste following to add slider to your theme:
 
 <h1>Credits</h1>
 <a target="_blank" href="http://unslider.com/">Unslider</a>
+<br/>
 Serbian translations: <a target="_blank" href="http://firstsiteguide.com/">Ogi Djuraskovic</a>.
 
 == Installation ==
