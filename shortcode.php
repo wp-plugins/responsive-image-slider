@@ -1,4 +1,4 @@
- <?php
+<?php
 
 function section_port_shortcode( $atts ) {
     extract( shortcode_atts( array( 'limit' => -1 ), $atts ) );
@@ -46,5 +46,3 @@ function section_port_shortcode( $atts ) {
 }
 
 add_shortcode( 'tp-unslider', 'section_port_shortcode' ); 
-
-?>
