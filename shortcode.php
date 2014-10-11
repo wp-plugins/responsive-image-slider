@@ -1,39 +1,50 @@
-<?php
+ <?php
 
 function section_port_shortcode( $atts ) {
-extract( shortcode_atts( array( 'limit' => -1), $atts ) );
+    extract( shortcode_atts( array( 'limit' => -1 ), $atts ) );
 
-$paged = get_query_var('paged') ? get_query_var('paged') : 1;
+    $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 
-query_posts(  array ( 
-    'post_type' => unslider,  
-    'order' => 'ASC', 
-    'orderby' =>'id', 
-    'paged' => $paged ) );
+    $posts = get_posts( array(
+        'post_type' => 'unslider',
+        'order'     => 'ASC',
+        'orderby'   => 'id',
+        'paged'     => $paged,
+    ) );
 
-$list = ' ';   
+    $slides = array();
+    $output = '';
 
-while ( have_posts() ) {
-    the_post();
-    $content = get_the_content();
-    $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-    $list .= '<li style="background: url('.$feat_image.');">'
-    . $content
-    . '</li>';
+    foreach ( $posts as $post ) {
+        $slides[] = array(
+            'image'   => wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ),
+            'content' => $post->post_content,
+        );
+    }
+
+    $slides = apply_filters( 'responsive_image_slider_slides', $slides );
+
+    foreach ( $slides as $slide ) {
+        $style = '';
+
+        if ( ! is_array( $slide ) ) {
+            $slide = array( 'content' => $slide );
+        }
+
+        if ( ! empty( $slide['image'] ) ) {
+            $style .= 'background: url(' . $slide['image'] . ');';
+        }
+
+        if ( ! empty( $slide['css'] ) ) {
+            $style .= $slide['css'];
+        }
+
+        $output .= '<li style="' . $style . '">' . $slide['content'] . '</li>';
+    }
+
+    return '<div class="unslider"><ul>' . $output . '</ul></div>';
 }
 
-
-return 
-'<div class="unslider">'
-. '<ul>'
-. $list
-. '</ul>'
-. '</div>'.
-
-wp_reset_query();
-
-}
-
-add_shortcode( 'tp-unslider', 'section_port_shortcode' );
+add_shortcode( 'tp-unslider', 'section_port_shortcode' ); 
 
 ?>

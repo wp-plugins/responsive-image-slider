@@ -1,7 +1,7 @@
 === Responsive Image Slider ===
 Plugin URI: http://www.trickspanda.com
 Description: Responsive Image Slider is the most simple & amazing responsive image slider ever.
-Version: 1.5
+Version: 1.6
 Requires at least: 2.5
 Tested up to: 4.0
 Contributors: hardeepasrani
@@ -35,6 +35,7 @@ Or you can paste following to add slider to your theme:
 <h1>Credits</h1>
 * <a target="_blank" href="http://unslider.com/">Unslider</a>
 * Serbian translations: <a target="_blank" href="http://firstsiteguide.com/">Ogi Djuraskovic</a>.
+* Improvements:  <a target="_blank" href="https://profiles.wordpress.org/dale3h/">Dale Higgs</a>.
 
 == Installation ==
 
@@ -75,3 +76,6 @@ I'm using the amazing <a target="_blank" href="http://unslider.com/">Unslider</a
 
 = 1.5 =
 * Added Serbian translations. Kudos to <a target="_blank" href="http://firstsiteguide.com/">Ogi Djuraskovic</a>.
+
+= 1.6 =
+* Improved the plugin code. Kudos to  <a target="_blank" href="https://profiles.wordpress.org/dale3h/">Dale Higgs</a>.
