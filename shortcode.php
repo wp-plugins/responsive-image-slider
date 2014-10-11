@@ -39,7 +39,7 @@ function section_port_shortcode( $atts ) {
             $style .= $slide['css'];
         }
 
-        $output .= '<li style="' . $style . '">' . $slide['content'] . '</li>';
+        $output .= '<li style="' . $style . ' background-size: 100%">' . $slide['content'] . '</li>';
     }
 
     return '<div class="unslider"><ul>' . $output . '</ul></div>';
